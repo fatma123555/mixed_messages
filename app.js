@@ -57,3 +57,15 @@ const emojis = [
   "📫",
   "👵",
 ];
+
+function randomNum() {
+  return Math.floor(Math.random() * Math.floor(16));
+}
+
+const randMessage = messages[randomNum()];
+const randName = names[randomNum()];
+const randEmoji = emojis[randomNum()];
+
+const finalMessage = `Hey ${randName}! ${randMessage} ${randEmoji}`;
+
+console.log(finalMessage);
